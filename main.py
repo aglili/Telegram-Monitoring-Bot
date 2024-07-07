@@ -24,7 +24,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 URLS = [
     "http://13.38.230.239:8000",
     "http://13.38.230.239:8080",
-    "http://13.38.230.239:8008/health"
+    "http://13.38.230.239:8008"
 ]
 
 # Check interval in seconds
