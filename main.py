@@ -56,7 +56,7 @@ def main():
     # Add the /start command handler
     application.add_handler(CommandHandler("start", start))
 
-    # Set up the job queue to run the check_service function every CHECK_INTERVAL seconds
+    # Set up the job queue to run the check_service function every {{CHECK_INTERVAL}} seconds
     job_queue = application.job_queue
     job_queue.run_repeating(check_service, interval=CHECK_INTERVAL, first=0)
 
