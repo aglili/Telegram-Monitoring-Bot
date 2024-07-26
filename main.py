@@ -21,7 +21,11 @@ TOKEN = os.getenv("TELEGRAM_API_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 
 # List of URLs to monitor
-URLS:list = os.getenv("SERVICE_URLS").split(",")
+URLS:list = [
+    os.getenv("SERVICE_1_URL"),
+    os.getenv("SERVICE_2_URL"),
+    os.getenv("SERVICE_3_URL"),
+]
 
 # Check interval in seconds
 CHECK_INTERVAL = 60
